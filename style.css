@@ -126,3 +126,16 @@ html, body {
   margin-bottom: 15px;
   font-weight: 800;
 }
+
+@media only screen and (max-device-width: 480px) {
+  .intro .avatar { margin-bottom: 20px; }
+  .intro .content { padding: 20px; }
+  .intro p { font-size: 20px; margin-bottom: 5px; }
+  .intro p.hey { font-size: 30px; }
+  .intro a.button { margin-top: 30px; }
+
+  .form form { padding: 20px; }
+  .form input, .form textarea { font-size: 20px; }
+  .form textarea { height: 70px; }
+  .form #submit-form { margin-top: 30px; }
+}

@@ -18,6 +18,11 @@ $('#submit-form').on('click', function(e) {
     data: values
   }).done(function(data) {
     $('form').html('<div class="success">Thanks, speak soon.</div>');
+    gtag('event', 'date-application', {
+      'event_category': 'apply',
+      'event_label': 'form',
+      'value': 1
+    });
   })
 });
 

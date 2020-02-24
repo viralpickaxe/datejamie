@@ -12,30 +12,16 @@
       <div class='content'>
         <img class='avatar' src="https://s.gravatar.com/avatar/f4c4a20e359accec32b07c76612569f2?s=350" />
         <p class='hey'>Hey my name is Jamie.</p>
-        <p>I'm a Software Engineer in London,</p>
+        <p>I'm a 7/10 in London,</p>
         <p>I also like taking <a href="http://instagram.com/viralpickaxe" target=_blank>photos</a>.</p>
-        <a class='button' href='#form'>Apply to date</a>
+        <button class='button' id='#intercomtrigger'>Apply to date</button>
       </div>
     </div>
-    <div class='slide form' id='form'>
-      <form id="test-form">
-        <input type="text" name="name" placeholder="My name is..."/>
-        <input type="text" name="number" placeholder="My number is..."/>
-        <textarea name="socials" placeholder="My socials are..." ></textarea>
-        <textarea name="about" placeholder="A bit about me..." ></textarea>
-        <div><button type="submit" id="submit-form">Apply</button></div>
-        <a class="note" href="https://twitter.com/intent/tweet?text=This+pretty+cool+guy+I+know+is+totally+down,+apply+to+date+him:+http://datejamie.com" target=_blank>
-          Repulsed and want nothing to do with me?<br />
-          Refer a friend and get 10% of the value of the ring.
-        </a>
-      </form>
-    </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="./cereal.js"></script>
-  <script src="./code.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114303577-1"></script>
   <script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/o2ru2zc6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    window.intercomSettings = {app_id: "o2ru2zc6"};
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());

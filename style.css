@@ -14,12 +14,6 @@ html, body {
   color: #101010;
 }
 
-.slide.form {
-  color: #f5f5f5;
-  background: #101010;
-  display: none;
-}
-
 .intro .content {
   padding: 40px;
 }
@@ -46,7 +40,7 @@ html, body {
   font-weight: 800;
 }
 
-.intro a {
+.intro a, .intro .button {
   text-decoration: none;
   color: #101010;
   border-bottom: 1px solid #101010;
@@ -60,7 +54,7 @@ html, body {
   border-color: hsla(0,0%,6%,.33);
 }
 
-.intro a.button {
+.intro .button {
   outline: none;
   border: 2px solid #101010;
   padding: 15px 25px;
@@ -71,86 +65,15 @@ html, body {
   background: #f5f5f5;
 }
 
-.intro a.button:hover {
+.intro .button:hover {
   transform: scale(1.05);
 }
 
-.form form {
-  padding: 40px;
-  width: 100%;
-}
-
-.form input, .form textarea {
-  background: none;
-  outline: none;
-  color: #f5f5f5;
-  border: none;
-  border-bottom: 1px solid #f5f5f5;
-  font-size: 30px;
-  padding: 10px 0;
-  width: 90%;
-  max-width: 500px;
-  display: block;
-  margin-bottom: 15px;
-  font-family: 'Karla', sans-serif;
-  resize: none;
-}
-
-.form textarea {
-  height: 110px;
-}
-
-::-webkit-input-placeholder {
-  color: #f5f5f58f;
-  font-weight: 100;
-}
-
-.form #submit-form {
-  outline: none;
-  border: 2px solid #f5f5f5;
-  color: #f5f5f5;
-  padding: 15px 25px;
-  font-size: 20px;
-  border-radius: 50px;
-  cursor: pointer;
-  margin-top: 40px;
-  background: #101010;
-}
-
-.form #submit-form:hover {
-  transform: scale(1.05);
-}
-
-.form .success {
-  font-size: 50px;
-  margin-bottom: 15px;
-  font-weight: 800;
-}
-
-.form .note {
-  display: block;
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 11px;
-  margin-top: 20px;
-  opacity: 0.7;
-  -webkit-transition: all .2s cubic-bezier(.25,.8,.25,1);
-  transition: all .2s cubic-bezier(.25,.8,.25,1);
-}
-
-.form .note:hover {
-  opacity: 0.9;
-}
 
 @media only screen and (max-device-width: 480px) {
   .intro .avatar { margin-bottom: 20px; }
   .intro .content { padding: 20px; }
   .intro p { font-size: 20px; margin-bottom: 5px; }
   .intro p.hey { font-size: 30px; }
-  .intro a.button { margin-top: 30px; }
-
-  .form form { padding: 20px; }
-  .form input, .form textarea { font-size: 20px; }
-  .form textarea { height: 70px; }
-  .form #submit-form { margin-top: 30px; }
+  .intro .button { margin-top: 30px; }
 }
